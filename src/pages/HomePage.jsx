@@ -10,6 +10,7 @@ const HomePage = () => {
     return (
         <div>
             <span>HomePage</span>
+            <span>Essa página é muito legal</span>
             <button onClick={handleNavigate} >Clique aqui!</button>
         </div>
   )
