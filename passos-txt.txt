@@ -1,0 +1,18 @@
+yarn add react-dom   
+yarn add react-router-dom   
+
+novo eslint da ingrid
+
+instalado extenção eslint e o prettier
+
+criado arquivo oculto .prettierrc,cjs
+
+ctrl espaço importa algo!!!!
+
+criamos as paginas dentro da pagina pages
+
+criando as rotas no App.jsx
+
+agora na main teremos que mudar
+
+usar F2 para renomear todas as variaveis (somente nome de variaveis)
