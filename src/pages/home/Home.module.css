@@ -16,46 +16,74 @@
   margin-bottom: 2rem;
 }
 
+/* Grid responsivo para os cards */
 .prateleira {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* cards centralizados e responsivos */
+  gap: 1.5rem; /* Aumentei um pouco o espaçamento para ficar melhor */
   justify-content: center;
-  gap: 1rem;
 }
 
 .card {
-  color: #fff;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-  width: 100%;
-  max-width: 400px;
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
   font-weight: 600;
+
+  /* Texto e links */
+  color: white; /* Cor branca definida como padrão */
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+  height: 90px;
+  /* ❌ REMOVIDO: width: 100%; */
+  /* ❌ REMOVIDO: max-width: 260px; */
+  /* ❌ REMOVIDO: margin: 0 auto; */
+  /* Essas propriedades conflitavam com o alinhamento do grid. Agora o grid controla o tamanho e o espaçamento. */
+}
+
+/* Garante que o texto permaneça branco em todos os estados */
+.card,
+.card:visited,
+.card:hover,
+.card:active {
+  color: white; /* ✅ ALTERADO: Garante que o texto seja sempre branco, evitando herdar outras cores */
+  text-decoration: none;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* Responsividade */
-@media (min-width: 768px) {
-  .card {
-    width: calc(50% - 1rem);
+.icon {
+  font-size: 1.3rem;
+  opacity: 0.85;
+}
+
+/* Degradês diferentes para cada card */
+.c1 { background: linear-gradient(135deg, #ff6a00, #ee0979); }
+.c2 { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+.c3 { background: linear-gradient(135deg, #36d1dc, #5b86e5); }
+.c4 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+.c5 { background: linear-gradient(135deg, #8e2de2, #4a00e0); }
+.c6 { 
+  background: linear-gradient(135deg, #f7971e, #ffd200); 
+  /* ❌ REMOVIDO: color: #1c1c1e; */
+  /* Removido para manter a consistência da cor branca em todos os cards, como você pediu. */
+}
+
+/* Responsividade: em telas pequenas 1 card por linha */
+@media (max-width: 768px) {
+  .prateleira {
+    grid-template-columns: 1fr;
+    max-width: 320px; /* Adicionado para centralizar melhor em telas de celular */
+    margin: 0 auto;   /* Adicionado para centralizar melhor em telas de celular */
   }
-}
-
-@media (min-width: 1024px) {
-  .card {
-    width: 220px;
-    height: 120px;
-  }
-}
-
-.linkDecoration {
-  text-decoration: none;
 }
