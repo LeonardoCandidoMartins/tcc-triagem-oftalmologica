@@ -85,5 +85,10 @@
     grid-template-columns: 1fr;
     max-width: 320px; /* Adicionado para centralizar melhor em telas de celular */
     margin: 0 auto;   /* Adicionado para centralizar melhor em telas de celular */
+    
+    gap: 0.5rem 1.5rem; /* primeiro valor = row-gap, segundo = column-gap */
+  }
+  .card {
+    max-height: 40px; /* Cards um pouco menores em telas pequenas */
   }
 }
