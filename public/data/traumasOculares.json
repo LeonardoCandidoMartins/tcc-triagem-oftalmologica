@@ -1,0 +1,127 @@
+{
+  "traumasOculares": [
+    {
+      "nome": "Trauma Ocular Contuso",
+      "foto": "lorem",
+      "descricao": "Lesão por impacto rombo (bola, punho, airbag) que pode causar desde hemorragia subconjuntival e abrasões até hifema, iridodiálise, ruptura de corpo ciliar, edema/ruptura de retina (commotio retinae) e fraturas orbitárias. Sinais de alarme: dor intensa, baixa acuidade visual, fotofobia, defeito pupilar aferente relativo (DPAR), hifema, deformidade do globo, proptose, diplopia ou restrição do movimento ocular.",
+      "tratamentos": [
+        "Avaliação inicial ABC e controle de dor; proteger o olho com escudo rígido (não compressivo).",
+        "Acuidade visual, exame pupilar (DPAR), inspeção, tonometria apenas se não houver suspeita de globo aberto.",
+        "Se hifema: cabeceira elevada a 30–45°, cicloplégico (ex.: ciclopentolato) e evitar AINE/aspirina; controlar PIO.",
+        "Gelo intermitente nas primeiras 24–48 h; analgesia não antiplaquetária.",
+        "Solicitar imagem (TC órbita/face sem contraste) se suspeita de fratura, corpo estranho, hemorragia retrobulbar.",
+        "Encaminhar de urgência ao oftalmologista diante de dor intensa, queda de visão, hifema, anormalidade pupilar, ruptura de retina suspeita."
+      ],
+      "referencias": ["Lorem et al., 2023", "Ipsum & Dolor, 2022"]
+    },
+    {
+      "nome": "Queimaduras Químicas",
+      "foto": "lorem",
+      "descricao": "Emergência oftalmológica por exposição a ácidos ou, mais gravemente, alcalis (soda cáustica, amônia, cal). Alcalis penetram rapidamente e causam necrose por liquefação. Manifesta-se com dor intensa, blefaroespasmo, hiperemia difusa, opacificação corneana e branqueamento conjuntival.",
+      "tratamentos": [
+        "Irrigação IMEDIATA e copiosa antes de qualquer outra medida (soro fisiológico ou água corrente) por 15–30+ minutos até pH neutro (verificar com papel indicador).",
+        "Remover partículas sólidas (p. ex., cal) dos fundos de saco com cotonete após instilar anestésico tópico.",
+        "Cicloplégico para dor (ciclopentolato), lágrimas artificiais abundantes; antibiótico tópico profilático.",
+        "Em casos moderados/graves: considerar corticosteroide tópico de curto curso e citrato/ascorbato tópicos conforme protocolo especializado.",
+        "Encaminhar URGENTE ao oftalmologista; avaliar necessidade de desbridamento, membrana amniótica e seguimento estreito."
+      ],
+      "referencias": ["Consectetur et al., 2021", "Lorem Guidelines, 2020"]
+    },
+    {
+      "nome": "Lesão do Globo Ocular Fechado",
+      "foto": "lorem",
+      "descricao": "Dano estrutural ocular sem solução de continuidade do globo (contusão, lamelas superficiais). Pode cursar com edema corneano, hifema, iridodiálise, subluxação do cristalino, hemorragias retinianas e edema macular.",
+      "tratamentos": [
+        "Proteger com escudo rígido; evitar compressão ocular.",
+        "Avaliar acuidade visual, reflexos pupilares, biomicroscopia quando disponível; medir PIO se globo aberto for descartado.",
+        "Analgesia; antiemético se náuseas (evitar Valsalva).",
+        "Cicloplégico para dor/uveíte traumática; corticosteroide tópico se indicado pelo especialista.",
+        "Imagem (TC) se suspeita de lesão interna significativa ou fratura.",
+        "Encaminhar ao oftalmologista para avaliação completa de segmento anterior e posterior."
+      ],
+      "referencias": ["Amet et al., 2019", "Lorem Trauma Report, 2022"]
+    },
+    {
+      "nome": "Queimaduras Relâmpago",
+      "foto": "lorem",
+      "descricao": "Exposição aguda a alta energia luminosa/UV/IR (p. ex., arco elétrico, soldagem) causando ceratopatia actínica e possível dano térmico palpebral/conjuntival. Sintomas após latência de 6–12 h: dor, fotofobia, lacrimejamento, blefaroespasmo.",
+      "tratamentos": [
+        "Lubrificantes e pomada epitelizante; evitar lentes de contato até cicatrização.",
+        "Analgésico sistêmico; considerar AINE tópico curto para dor (semeando com cautela).",
+        "Antibiótico tópico profilático em abrasões epiteliais.",
+        "Orientar proteção UV adequada e afastamento temporário da fonte.",
+        "Reavaliação em 24–48 h; encaminhar se piora ou não melhora."
+      ],
+      "referencias": ["Ipsum Safety Series, 2020", "Dolor & Sit, 2018"]
+    },
+    {
+      "nome": "Laceração do Órgão Ocular",
+      "foto": "lorem",
+      "descricao": "Cortes/lacerações das pálpebras, conjuntiva, córnea ou esclera. Pode envolver canalículos lacrimais, placa tarsal ou margem palpebral, com risco funcional e estético. Lacerações corneoesclerais podem sinalizar globo aberto.",
+      "tratamentos": [
+        "Se suspeita de globo aberto: NÃO manipular nem medir PIO; escudo ocular rígido; analgesia e antiemético; antibiótico sistêmico de amplo espectro; jejum; TC órbita.",
+        "Lacerações palpebrais simples: limpeza, hemostasia e sutura por camadas finas; verificar integridade canalicular.",
+        "Iniciar antibiótico tópico +/- sistêmico conforme contaminação; antitetânica se indicado.",
+        "Encaminhar ao oftalmologista/oculoplástico para feridas complexas (margem palpebral, canalículo, ptose, exposição gordura orbital)."
+      ],
+      "referencias": [
+        "Lorem Oculoplastics Rev., 2021",
+        "Adipiscing et al., 2022"
+      ]
+    },
+    {
+      "nome": "Lesão do Globo Ocular Aberto (Lesão Penetrante do Olho)",
+      "foto": "lorem",
+      "descricao": "Emergência caracterizada por ruptura/penetração do globo (por arma branca, estilhaço, alta velocidade). Achados: ferida corneoescleral, câmara anterior rasa, íris em ferida, pupila irregular, baixa acuidade visual, dor intensa; risco de endoftalmite.",
+      "tratamentos": [
+        "NÃO comprimir o olho; colocar escudo ocular rígido. Analgesia, antiemético, manter NPO.",
+        "Antibiótico sistêmico de amplo espectro (p. ex., cefalosporina + quinolona) conforme protocolo local; profilaxia antitetânica.",
+        "TC de órbita/face para detectar corpo estranho intraocular.",
+        "Preparar reparo cirúrgico urgente por oftalmologia; evitar colírios até avaliação especializada.",
+        "Orientar evitar Valsalva/esforço; manter cabeceira elevada."
+      ],
+      "referencias": ["Dolor Trauma Ophth., 2023", "Lorem et al., 2021"]
+    },
+    {
+      "nome": "Fratura da Orbital",
+      "foto": "lorem",
+      "descricao": "Fraturas dos ossos orbitários (assoalho/blow-out, parede medial, teto), geralmente por trauma contuso. Pode cursar com enoftalmia, diplopia (aprisionamento do reto inferior), hipoestesia infraorbital, enfisema subcutâneo, limitação de supradução.",
+      "tratamentos": [
+        "TC órbita/face sem contraste para definição do traço e aprisionamento muscular.",
+        "Gelo local, analgésico; evitar assoar o nariz por risco de enfisema orbital.",
+        "Antibiótico profilático em fraturas expostas/sinusais conforme protocolo local.",
+        "Indicação cirúrgica: diplopia persistente com evidência de aprisionamento, enoftalmia significativa, grande defeito ósseo, bradicardia oculocardíaca em supradução.",
+        "Encaminhar a oftalmo/craniofacial; avaliação de retina/PIO conforme quadro."
+      ],
+      "referencias": ["Ipsum Maxillofacial Guide, 2022", "Lorem & Amet, 2020"]
+    },
+    {
+      "nome": "Lesão Não Acidental (NAI)",
+      "foto": "lorem",
+      "descricao": "Trauma ocular por agressão/abuso, especialmente em crianças e idosos, podendo apresentar hemorragias retinianas, fraturas orbitais, lacerações palpebrais e discrepância entre história e achados. Alto impacto médico-legal.",
+      "tratamentos": [
+        "Garantir segurança do paciente; seguir protocolos legais locais (notificação obrigatória).",
+        "Documentação fotográfica cuidadosa; exame completo oftalmológico e sistêmico.",
+        "Imagem (TC/RM) conforme necessidade; avaliação multidisciplinar (pediatria, serviço social, medicina legal).",
+        "Tratar lesões específicas conforme conduta padrão (hifema, fraturas, lacerações)."
+      ],
+      "referencias": [
+        "Consectetur Legal Rev., 2019",
+        "Lorem Child Safety Rep., 2021"
+      ]
+    },
+    {
+      "nome": "Hemorragia Retrobulbar (síndrome do compartimento orbital)",
+      "foto": "lorem",
+      "descricao": "Sangramento dentro da órbita elevando a pressão do compartimento, levando a isquemia do nervo óptico e retina. Apresenta dor intensa, proptose, rigidez orbital, queda acentuada da visão, midríase, DPAR e restrição de movimentos. Emergência tempo-dependente.",
+      "tratamentos": [
+        "Reconhecer rapidamente; medir acuidade e avaliar pupila (DPAR).",
+        "Se sinais de neuropatia compressiva: realizar cantotomia e cantólise lateral IMEDIATAMENTE (não aguardar imagem), quando capacitado.",
+        "Manter cabeceira elevada, gelo local; analgesia e antiemético.",
+        "Considerar manitol/acetazolamida para reduzir PIO enquanto organiza intervenção.",
+        "Após estabilização, TC para avaliar fonte/sangramento; encaminhar urgência ao oftalmologista/cirurgião oculoplástico."
+      ],
+      "referencias": ["Lorem Orbital Emergencies, 2020", "Ipsum et al., 2024"]
+    }
+  ]
+}

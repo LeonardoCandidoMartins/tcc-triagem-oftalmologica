@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+  font-family: sans-serif;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+}
+
+.card {
+  background-color: var(--card-background);
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.opcao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* garante alinhamento vertical */
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.opcao p {
+  margin: 0; /* evita espaçamento extra */
+  font-weight: bold;
+}
+
+/* Se você quiser manter estilo clicável no label do switch,
+   mantenha no módulo do interruptor, não aqui. */
+
+/* Remove largura fixa que brigava com o componente */
+.interruptor {
+  display: flex;
+  align-items: center;
+}

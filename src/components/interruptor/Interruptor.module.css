@@ -1,0 +1,58 @@
+.switch {
+  /* Variável que controla o tamanho do switch */
+  --tamanho-switch: 16px; /* <-- altere aqui para aumentar/diminuir tudo */
+
+  font-size: var(--tamanho-switch);
+
+  position: relative;
+  display: inline-block;
+  width: 3.4em;   /* Relativo ao font-size */
+  height: 2em;    /* Relativo ao font-size */
+}
+
+/* Esconde o input original */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Fundo do switch */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 2em; /* deixa o fundo arredondado */
+}
+
+/* Bolinha do switch */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.5em;
+  left: 0.25em;
+  top: 50%; /* centraliza verticalmente */
+  transform: translateY(-50%); /* garante centralização */
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+/* Quando marcado */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translate(1.4em, -50%); /* move a bolinha pra direita sem perder centralização */
+}

@@ -1,0 +1,323 @@
+{
+  "olhosVermelhos": [
+    {
+      "nome": "Visão Geral do Olho Vermelho Agudo",
+      "foto": "lorem",
+      "descricao": "O olho vermelho agudo é uma manifestação clínica comum causada por diversas condições, que variam desde doenças benignas autolimitadas até emergências oftalmológicas. Caracteriza-se por hiperemia conjuntival, episcleral ou ciliar, podendo estar associada a dor, secreção, fotofobia e alteração visual. A avaliação inicial deve incluir anamnese detalhada, inspeção, avaliação da acuidade visual, exame com lâmpada de fenda quando disponível e pesquisa de sinais de alarme, como dor intensa, redução súbita da visão ou pupila irregular.",
+      "tratamentos": [
+        "Identificar e tratar a causa subjacente com base no exame clínico e nos achados complementares.",
+        "Educação do paciente sobre sinais de alarme e necessidade de reavaliação imediata caso apareçam.",
+        "Controle sintomático com lubrificantes oculares e compressas mornas ou frias, dependendo do quadro.",
+        "Evitar uso de colírios vasoconstritores sem indicação médica."
+      ],
+      "referencias": ["Lorem et al. (2023)", "Ipsum et al. (2022)"]
+    },
+    {
+      "nome": "Crise de Glaucoma de Ângulo Fechado Agudo",
+      "foto": "lorem",
+      "descricao": "Emergência oftalmológica caracterizada por aumento súbito e intenso da pressão intraocular devido ao fechamento do ângulo de drenagem. Clinicamente apresenta dor ocular severa, visão turva, halos coloridos, náuseas, vômitos e olho duro à palpação. A córnea pode apresentar edema e a pupila estar semi-dilatada e não reativa. Sem intervenção rápida, pode ocorrer perda visual irreversível.",
+      "tratamentos": [
+        "Iniciar imediatamente redução da pressão intraocular: manitol IV, acetazolamida oral ou IV e colírios beta-bloqueadores (timolol) e alfa-agonistas (apraclonidina).",
+        "Após redução inicial da pressão, administrar pilocarpina para contrair a pupila e abrir o ângulo.",
+        "Encaminhar para iridotomia a laser ou cirúrgica o mais rápido possível no olho afetado e profilática no contralateral."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Dolor et al. (2020)"]
+    },
+    {
+      "nome": "Blefarite Aguda",
+      "foto": "lorem",
+      "descricao": "Inflamação súbita da margem palpebral, geralmente causada por infecção bacteriana, principalmente por Staphylococcus aureus. Os sintomas incluem vermelhidão, inchaço, crostas aderidas aos cílios e desconforto ocular. Pode estar associada a disfunção das glândulas de Meibômio.",
+      "tratamentos": [
+        "Higiene palpebral rigorosa com compressas mornas seguidas de limpeza com solução diluída de shampoo neutro.",
+        "Pomada antibiótica tópica (eritromicina ou bacitracina) aplicada na margem palpebral à noite por 7–10 dias.",
+        "Lubrificantes oculares para aliviar sintomas de olho seco.",
+        "Em casos recorrentes, considerar doxiciclina oral por 4–6 semanas."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Amet et al. (2021)"]
+    },
+    {
+      "nome": "Envolvimento da Câmara Anterior",
+      "foto": "lorem",
+      "descricao": "Refere-se a inflamação ou presença de material anormal no espaço entre a córnea e a íris, incluindo hifema, hipópio ou células inflamatórias. Pode ocorrer após trauma, infecção, uveíte ou complicações de cirurgias oculares.",
+      "tratamentos": [
+        "Tratamento direcionado à causa primária (antibióticos, antivirais, anti-inflamatórios).",
+        "Controle de dor com cicloplégicos e analgésicos.",
+        "Monitoramento da pressão intraocular.",
+        "Evitar esforço físico e proteger o olho."
+      ],
+      "referencias": ["Lorem et al. (2019)", "Sit et al. (2018)"]
+    },
+    {
+      "nome": "Úlcera Bacteriana / por Acanthamoeba",
+      "foto": "lorem",
+      "descricao": "Infecção grave da córnea, frequentemente associada ao uso inadequado de lentes de contato. A úlcera bacteriana é causada por patógenos como Pseudomonas aeruginosa, enquanto a ceratite por Acanthamoeba está associada à exposição à água contaminada.",
+      "tratamentos": [
+        "Colírios antibióticos de amplo espectro (fluoroquinolonas) em regime intensivo.",
+        "Para Acanthamoeba, uso de biguanidas (PHMB) e diamidinas (propamidina) por várias semanas.",
+        "Controle da dor com cicloplégicos.",
+        "Evitar uso de lentes de contato até completa resolução."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Consectetur et al. (2020)"]
+    },
+    {
+      "nome": "Chalazion",
+      "foto": "lorem",
+      "descricao": "Nódulo indolor e firme na pálpebra, causado pela obstrução e inflamação crônica de uma glândula de Meibômio. Pode persistir por semanas ou meses.",
+      "tratamentos": [
+        "Compressas mornas várias vezes ao dia para promover drenagem.",
+        "Massagem suave na pálpebra para auxiliar no esvaziamento da glândula.",
+        "Se persistente, considerar injeção de corticosteroide ou excisão cirúrgica."
+      ],
+      "referencias": ["Lorem et al. (2022)", "Adipiscing et al. (2021)"]
+    },
+    {
+      "nome": "Conjuntivite Alérgica",
+      "foto": "lorem",
+      "descricao": "Reação de hipersensibilidade da conjuntiva a alérgenos ambientais como pólen, poeira ou pelos de animais. Apresenta prurido intenso, hiperemia e lacrimejamento.",
+      "tratamentos": [
+        "Evitar exposição ao alérgeno identificado.",
+        "Uso de colírios anti-histamínicos e estabilizadores de mastócitos.",
+        "Lubrificantes artificiais para reduzir a concentração de alérgenos na superfície ocular.",
+        "Em casos graves, corticosteroides tópicos de curta duração sob supervisão médica."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Eiusmod et al. (2019)"]
+    },
+    {
+      "nome": "Conjuntivite Bacteriana",
+      "foto": "lorem",
+      "descricao": "Infecção aguda da conjuntiva por bactérias como S. aureus, S. pneumoniae ou H. influenzae. Sintomas incluem secreção purulenta, hiperemia e desconforto ocular.",
+      "tratamentos": [
+        "Colírios antibióticos tópicos como ciprofloxacina ou ofloxacina.",
+        "Higienização frequente das pálpebras para remoção de secreção.",
+        "Evitar uso de lentes de contato até resolução."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Tempor et al. (2020)"]
+    },
+    {
+      "nome": "Conjuntivite Viral",
+      "foto": "lorem",
+      "descricao": "Inflamação da conjuntiva causada por adenovírus ou outros vírus respiratórios. Caracteriza-se por secreção aquosa, hiperemia difusa e linfadenopatia pré-auricular.",
+      "tratamentos": [
+        "Medidas de suporte: compressas frias, lubrificantes artificiais.",
+        "Evitar contato direto para reduzir a transmissão.",
+        "Corticosteroide tópico apenas em casos com inflamação intensa sob supervisão."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Incididunt et al. (2019)"]
+    },
+    {
+      "nome": "Corpo Estranho Corneano ou Conjuntival e Abrasão de Córnea",
+      "foto": "lorem",
+      "descricao": "Presença de partículas ou objetos na córnea ou conjuntiva, geralmente após trauma ocular, podendo causar dor intensa, lacrimejamento, fotofobia e sensação de corpo estranho. A abrasão corneana é a perda da camada epitelial da córnea devido a trauma mecânico.",
+      "tratamentos": [
+        "Remover o corpo estranho sob anestesia tópica utilizando técnica asséptica.",
+        "Colírios antibióticos profiláticos para prevenir infecção secundária.",
+        "Evitar uso de lentes de contato até completa cicatrização.",
+        "Analgesia com anti-inflamatórios não esteroidais tópicos ou orais."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Dolor et al. (2019)"]
+    },
+    {
+      "nome": "Ectrópio",
+      "foto": "lorem",
+      "descricao": "Eversão da margem palpebral, expondo a conjuntiva e a córnea, mais comum em idosos devido à flacidez tissular. Pode causar epífora, irritação ocular crônica e risco aumentado de ceratite.",
+      "tratamentos": [
+        "Lubrificação ocular frequente para proteger a superfície ocular.",
+        "Proteção noturna com pomada lubrificante.",
+        "Cirurgia corretiva para restaurar a posição palpebral."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Sit amet et al. (2020)"]
+    },
+    {
+      "nome": "Entrópio",
+      "foto": "lorem",
+      "descricao": "Inversão da margem palpebral, causando atrito dos cílios contra a córnea e conjuntiva. Pode resultar em lacrimejamento, dor e lesões corneanas.",
+      "tratamentos": [
+        "Lubrificação intensa e uso de pomada oftálmica para reduzir atrito.",
+        "Fita adesiva ou suturas temporárias para eversão palpebral.",
+        "Cirurgia definitiva para corrigir a posição."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Consectetur et al. (2019)"]
+    },
+    {
+      "nome": "Episclerite",
+      "foto": "lorem",
+      "descricao": "Inflamação benigna e autolimitada da episclera, caracterizada por hiperemia localizada, desconforto leve e ausência de comprometimento visual significativo.",
+      "tratamentos": [
+        "Lubrificantes oculares para alívio sintomático.",
+        "AINEs tópicos ou orais em casos persistentes.",
+        "Investigar doenças sistêmicas associadas em casos recorrentes."
+      ],
+      "referencias": ["Lorem et al. (2019)", "Adipiscing et al. (2018)"]
+    },
+    {
+      "nome": "Lesão de Pálpebra",
+      "foto": "lorem",
+      "descricao": "Qualquer trauma que comprometa a integridade da pálpebra, podendo envolver lacerações, queimaduras ou mordeduras. Necessita de avaliação cuidadosa para preservar função e estética.",
+      "tratamentos": [
+        "Limpeza cuidadosa e remoção de detritos.",
+        "Sutura delicada com alinhamento anatômico.",
+        "Antibioticoterapia profilática tópica e/ou sistêmica.",
+        "Encaminhar casos complexos ao oftalmologista ou cirurgião plástico ocular."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Dolor sit et al. (2019)"]
+    },
+    {
+      "nome": "Ceratite Herpética por HSV",
+      "foto": "lorem",
+      "descricao": "Infecção da córnea causada pelo vírus herpes simples, caracterizada por lesões dendríticas visíveis à coloração com fluoresceína, dor, fotofobia e lacrimejamento.",
+      "tratamentos": [
+        "Antivirais tópicos como aciclovir 3% ou ganciclovir 0,15% aplicados várias vezes ao dia.",
+        "Evitar o uso de corticosteroides tópicos na fase epitelial ativa.",
+        "Analgesia e proteção ocular.",
+        "Tratamento prolongado pode ser necessário em casos recorrentes."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Elit et al. (2019)"]
+    },
+    {
+      "nome": "Herpes Zoster",
+      "foto": "lorem",
+      "descricao": "Reativação do vírus varicela-zoster no território do nervo trigêmeo, podendo envolver o olho (zoster oftálmico). Apresenta erupção vesicular na região periorbital, dor intensa e, em casos graves, ceratite e uveíte.",
+      "tratamentos": [
+        "Início precoce de antivirais sistêmicos (aciclovir, valaciclovir) para reduzir complicações.",
+        "Controle da dor com analgésicos e anti-inflamatórios.",
+        "Lubrificação ocular intensiva.",
+        "Encaminhamento urgente ao oftalmologista se houver envolvimento ocular."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Incididunt et al. (2020)"]
+    },
+    {
+      "nome": "Hifema",
+      "foto": "lorem",
+      "descricao": "Acúmulo de sangue na câmara anterior do olho, geralmente decorrente de trauma. Pode causar dor, visão turva e aumento da pressão intraocular.",
+      "tratamentos": [
+        "Repouso absoluto com cabeceira elevada a 30°.",
+        "Proteção ocular e evitar uso de AAS ou AINEs.",
+        "Controle rigoroso da pressão intraocular.",
+        "Avaliar necessidade de evacuação cirúrgica se o sangue não reabsorver."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Magna et al. (2019)"]
+    },
+    {
+      "nome": "Hipópio",
+      "foto": "lorem",
+      "descricao": "Acúmulo de pus na câmara anterior do olho, geralmente associado a uveíte grave ou infecção intraocular. Indica inflamação intensa.",
+      "tratamentos": [
+        "Tratamento imediato da causa subjacente (antibióticos ou antifúngicos sistêmicos e intravítreos).",
+        "Controle da inflamação com corticosteroides sob supervisão especializada.",
+        "Monitoramento intensivo da pressão intraocular."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Ut labore et al. (2020)"]
+    },
+    {
+      "nome": "Subluxação do Cristalino",
+      "foto": "lorem",
+      "descricao": "Deslocamento parcial do cristalino do olho, geralmente devido a trauma, doenças do tecido conjuntivo como a síndrome de Marfan ou pseudoexfoliação. Pode causar visão turva, diplopia monocular e aumento do risco de glaucoma.",
+      "tratamentos": [
+        "Acompanhamento clínico e controle da pressão intraocular.",
+        "Uso de óculos ou lentes corretivas para minimizar distorções visuais.",
+        "Cirurgia para remoção ou reposicionamento do cristalino em casos sintomáticos ou complicados."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Dolor sit et al. (2020)"]
+    },
+    {
+      "nome": "Patologia Macular",
+      "foto": "lorem",
+      "descricao": "Grupo de doenças que afetam a mácula, região central da retina responsável pela visão de detalhes finos. Inclui degeneração macular relacionada à idade, edema macular e buraco macular. Pode causar visão central borrada ou distorcida.",
+      "tratamentos": [
+        "Tratamento específico conforme diagnóstico: anti-VEGF intravítreo, fotocoagulação a laser ou cirurgia vítreo-retiniana.",
+        "Controle de fatores de risco como hipertensão e tabagismo.",
+        "Acompanhamento oftalmológico regular."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Amet et al. (2019)"]
+    },
+    {
+      "nome": "Ceratite Marginal",
+      "foto": "lorem",
+      "descricao": "Inflamação periférica da córnea, geralmente associada a blefarite crônica ou hipersensibilidade a antígenos bacterianos. Manifesta-se com dor, hiperemia e infiltrados periféricos.",
+      "tratamentos": [
+        "Controle da blefarite com higiene palpebral rigorosa.",
+        "Colírios antibióticos se houver ulceração associada.",
+        "Corticosteroides tópicos de curta duração sob supervisão médica."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Elit et al. (2020)"]
+    },
+    {
+      "nome": "Glaucoma Neovascular",
+      "foto": "lorem",
+      "descricao": "Forma secundária de glaucoma causada pelo crescimento anormal de vasos sanguíneos na íris e ângulo de drenagem, geralmente secundário a isquemia retiniana (como na retinopatia diabética proliferativa).",
+      "tratamentos": [
+        "Controle da pressão intraocular com colírios hipotensores múltiplos e acetazolamida oral.",
+        "Fotocoagulação panretiniana para reduzir estímulo angiogênico.",
+        "Anti-VEGF intravítreo para regressão neovascular.",
+        "Cirurgia filtrante se controle clínico falhar."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Adipiscing et al. (2019)"]
+    },
+    {
+      "nome": "Oftalmia Neonatal",
+      "foto": "lorem",
+      "descricao": "Conjuntivite em recém-nascidos, adquirida durante o parto, causada por Neisseria gonorrhoeae, Chlamydia trachomatis ou outros patógenos. Pode levar a complicações graves se não tratada.",
+      "tratamentos": [
+        "Profilaxia com pomada de eritromicina logo após o nascimento.",
+        "Tratamento específico: ceftriaxona para gonorreia, azitromicina para clamídia.",
+        "Lavagem ocular frequente e acompanhamento pediátrico."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Consectetur et al. (2020)"]
+    },
+    {
+      "nome": "Celulite Pré-septal (Periorbital)",
+      "foto": "lorem",
+      "descricao": "Infecção dos tecidos anteriores ao septo orbital, geralmente secundária a trauma, picadas de insetos ou sinusite. Apresenta edema, eritema e dor palpebral, sem sinais de comprometimento orbital.",
+      "tratamentos": [
+        "Antibioticoterapia oral de amplo espectro.",
+        "Compressas mornas para conforto.",
+        "Acompanhamento clínico para detectar possível progressão para celulite orbital."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Incididunt et al. (2019)"]
+    },
+    {
+      "nome": "Pterígio",
+      "foto": "lorem",
+      "descricao": "Crescimento fibrovascular da conjuntiva sobre a córnea, geralmente associado à exposição crônica a radiação UV. Pode causar desconforto, irritação e, em casos avançados, redução da visão.",
+      "tratamentos": [
+        "Lubrificação ocular para aliviar sintomas.",
+        "Óculos de sol para proteção contra UV.",
+        "Excisão cirúrgica se houver ameaça ao eixo visual ou desconforto significativo."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Ut labore et al. (2020)"]
+    },
+    {
+      "nome": "Esclerite",
+      "foto": "lorem",
+      "descricao": "Inflamação grave e dolorosa da esclera, frequentemente associada a doenças autoimunes como artrite reumatoide. Pode causar dor intensa, pior à movimentação ocular, e risco de perfuração ocular.",
+      "tratamentos": [
+        "AINEs sistêmicos em casos leves.",
+        "Corticosteroides sistêmicos ou imunossupressores em casos graves.",
+        "Tratamento da doença sistêmica subjacente."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Magna et al. (2019)"]
+    },
+    {
+      "nome": "Hemorragia Subconjuntival",
+      "foto": "lorem",
+      "descricao": "Extravasamento de sangue sob a conjuntiva, apresentando mancha vermelha brilhante e indolor. Geralmente idiopática e benigna, mas pode estar associada a trauma ou hipertensão.",
+      "tratamentos": [
+        "Observação expectante, pois reabsorve espontaneamente em 1 a 2 semanas.",
+        "Lubrificantes oculares se houver irritação.",
+        "Controle de fatores predisponentes, como hipertensão."
+      ],
+      "referencias": ["Lorem et al. (2021)", "Amet et al. (2020)"]
+    },
+    {
+      "nome": "Tríquiases",
+      "foto": "lorem",
+      "descricao": "Condição na qual os cílios crescem na direção da superfície ocular, causando irritação, lacrimejamento e risco de lesão corneana.",
+      "tratamentos": [
+        "Remoção mecânica dos cílios mal posicionados.",
+        "Eletrodepilação ou crioterapia para casos recorrentes.",
+        "Proteção ocular e lubrificação."
+      ],
+      "referencias": ["Lorem et al. (2020)", "Dolor sit et al. (2019)"]
+    }
+  ]
+}

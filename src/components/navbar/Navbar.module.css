@@ -1,0 +1,30 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--navbar-background);
+  width: 100%;
+  padding: var(--navbar-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  height: 6vh;
+}
+
+.navbar a {
+  color: var(--navbar-link-color);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--navbar-link-hover);
+}
+
+.navbar a:active {
+  color: #ffd700;
+}
