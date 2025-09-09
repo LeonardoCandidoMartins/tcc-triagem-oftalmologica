@@ -1,0 +1,195 @@
+/* AuxilioTriagem.module.css */
+
+/* Estilos gerais para todas as telas (desktop first, mas com flexibilidade) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa a altura total da viewport */
+  background-color: #f0f2f5; /* Fundo cinza claro para a página */
+  padding: 20px;
+  box-sizing: border-box; /* Inclui padding na dimensão total do elemento */
+}
+
+.card {
+  background-color: #ffffff; /* Fundo branco para o cartão */
+  border-radius: 12px; /* Cantos levemente arredondados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+  padding: 30px;
+  width: 100%; /* Ocupa 100% da largura disponível */
+  max-width: 500px; /* Limite máximo para telas maiores */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço entre os elementos dentro do cartão */
+}
+
+.card h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-weight: 600;
+  line-height: 1.3; /* Melhora a legibilidade em várias linhas */
+}
+
+.card h3 {
+  color: #555;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.card ul {
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Alinha os itens da lista à esquerda */
+}
+
+.card li {
+  background-color: #e9ecef; /* Fundo cinza claro para itens da lista */
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 1.1em;
+  border-left: 5px solid #007bff; /* Linha azul na esquerda */
+}
+
+.optionsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os botões */
+  gap: 10px; /* Espaço entre os botões */
+  margin-top: 15px;
+}
+
+.card button {
+  background-color: #007bff; /* Cor azul primária */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-out; /* Transições suaves */
+  margin: 0; /* Remove a margem individual para usar o gap do container */
+  flex-grow: 1; /* Faz com que os botões tentem ocupar o espaço disponível */
+  min-width: 120px; /* Garante um tamanho mínimo para cliques */
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos no width/height */
+}
+
+.card button:hover {
+  background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+.card button:active {
+  background-color: #004085; /* Ainda mais escuro no clique */
+  transform: scale(0.98); /* Pequena redução de escala no clique */
+}
+
+/* Estilos específicos para o botão "Voltar" */
+.voltarButton {
+  background-color: #6c757d !important; /* Cinza para 'Voltar' */
+  margin-top: 20px; /* Espaço acima do botão Voltar */
+}
+
+.voltarButton:hover {
+  background-color: #5a6268 !important;
+}
+
+.voltarButton:active {
+  background-color: #495057 !important;
+}
+
+/* Estilos específicos para o botão "Reiniciar" */
+.reiniciarButton {
+  background-color: #28a745 !important; /* Verde para 'Reiniciar' */
+  margin-top: 20px; /* Espaço acima do botão Reiniciar */
+}
+
+.reiniciarButton:hover {
+  background-color: #218838 !important;
+}
+
+.reiniciarButton:active {
+  background-color: #1e7e34 !important;
+}
+
+/* Estilo para o resultado (Diagnóstico) */
+.card .diagnostico {
+  color: #28a745; /* Cor verde para o texto do diagnóstico */
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+/* --------------------------------------------------- */
+/* Media Queries para Telas Menores (Celulares) */
+/* Aplicam-se quando a largura da tela é no máximo 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px; /* Reduz o padding geral em telas menores */
+  }
+
+  .card {
+    padding: 20px; /* Reduz o padding interno do card */
+    border-radius: 8px; /* Cantos um pouco menos arredondados */
+  }
+
+  .card h2 {
+    font-size: 1.5em; /* Diminui o tamanho da fonte para títulos */
+  }
+
+  .card h3 {
+    font-size: 1.2em; /* Diminui o tamanho da fonte para subtítulos */
+  }
+
+  .card li {
+    font-size: 1em; /* Diminui o tamanho da fonte para itens de lista */
+    padding: 8px 12px;
+  }
+
+  .optionsContainer {
+    flex-direction: column; /* Faz com que os botões de opção fiquem empilhados verticalmente */
+    gap: 8px; /* Reduz o espaçamento entre os botões */
+  }
+
+  .card button {
+    width: 100%; /* Botões ocupam a largura total em telas menores */
+    max-width: 300px; /* Limita a largura dos botões empilhados */
+    margin: 0 auto; /* Centraliza os botões */
+    font-size: 1em; /* Diminui o tamanho da fonte dos botões */
+    padding: 10px 15px; /* Ajusta o padding dos botões */
+  }
+
+  /* Garante que o botão de voltar e reiniciar fiquem com sua largura completa */
+  .voltarButton,
+  .reiniciarButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Media Query para Telas Muito Pequenas (Smartphones) */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+    gap: 15px; /* Ajusta o espaçamento geral no card */
+  }
+
+  .card h2 {
+    font-size: 1.3em;
+  }
+
+  .card h3 {
+    font-size: 1.1em;
+  }
+
+  .card li {
+    font-size: 0.95em;
+  }
+}
