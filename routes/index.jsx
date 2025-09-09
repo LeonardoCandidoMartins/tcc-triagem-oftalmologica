@@ -12,6 +12,7 @@ import DetalheTrauma from "../src/pages/detalheTrauma/DetalheTrauma.jsx";
 import AuxilioTriagem from "../src/pages/auxilioTriagem/AuxilioTriagem.jsx";
 import TratamentoOcular from "../src/pages/tratamentoOcular/TratamentoOcular.jsx";
 import LuzCobalto from '../src/pages/luzCobalto/LuzCobalto.jsx';
+import Estabelecimentos from '../src/pages/estabelecimentos/Estabelecimentos.jsx';
 
 
 const AppRoutes = () => {
@@ -30,6 +31,7 @@ const AppRoutes = () => {
         <Route path='/auxilio-triagem' element={<AuxilioTriagem />} />      
         <Route path='/tratamento-ocular' element={<TratamentoOcular />} />  
         <Route path='/luz-cobalto' element={<LuzCobalto />} />
+        <Route path='/estabelecimentos' element={<Estabelecimentos />} />
     </Routes>
   )
 }
