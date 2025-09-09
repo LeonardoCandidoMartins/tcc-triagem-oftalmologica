@@ -9,7 +9,7 @@ function TraumaOcular() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("public/data/traumasOculares.json")
+    fetch("/data/traumasOculares.json")
       .then((res) => res.json())
       .then((data) => setCondicoes(data.traumasOculares || []))
       .catch((err) => console.error("Erro ao carregar dados do JSON:", err));

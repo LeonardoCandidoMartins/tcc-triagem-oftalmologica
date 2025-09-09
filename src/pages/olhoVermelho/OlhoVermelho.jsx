@@ -9,7 +9,7 @@ function OlhoVermelho() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("public/data/olhosVermelhos.json")
+    fetch("/data/olhosVermelhos.json")
       .then((res) => res.json())
       .then((data) => setCondicoes(data.olhosVermelhos))
       .catch((err) => console.error("Erro ao carregar dados do JSON:", err));

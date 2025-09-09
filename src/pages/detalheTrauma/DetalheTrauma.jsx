@@ -18,7 +18,7 @@ function DetalheTrauma() {
 
     // Fallback: entrou direto na URL -> buscar no JSON pelo nome
     const nomeDecodificado = decodeURIComponent(nome || "");
-    fetch("public/data/traumasOculares.json")
+    fetch("/data/traumasOculares.json")
       .then((res) => res.json())
       .then((data) => {
         const lista = data.traumasOculares || [];
