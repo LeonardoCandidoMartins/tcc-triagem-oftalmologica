@@ -16,3 +16,6 @@ criando as rotas no App.jsx
 agora na main teremos que mudar
 
 usar F2 para renomear todas as variaveis (somente nome de variaveis)
+
+
+yarn add @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core

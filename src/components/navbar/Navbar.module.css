@@ -1,30 +1,71 @@
+/* Variáveis de cor */
+:root {
+  --cor-fundo-navbar: rgba(255, 255, 255, 0.7);
+  --cor-link-navbar: #333;
+  --cor-link-hover: #007bff;
+  --cor-link-active: #0056b3;
+}
+
+/* Navbar */
 .navbar {
   position: sticky;
   top: 0;
-  background-color: var(--navbar-background);
-  width: 100%;
-  padding: var(--navbar-padding);
+  width: 100vw; /* Garante que não ultrapasse a tela */
+  z-index: 1000;
+
+  /* Efeito Glassmorphism */
+  background-color: var(--cor-fundo-navbar);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* Layout */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  padding: 0 2rem; /* Menos propenso a causar overflow */
+  box-sizing: border-box; /* Inclui padding na largura total */
 
-  height: 6vh;
+  /* Sombra suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* Links da navbar */
 .navbar a {
-  color: var(--navbar-link-color);
+  color: var(--cor-link-navbar);
   text-decoration: none;
   margin: 0 1rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Sublinhado animado */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--cor-link-hover);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+/* Hover e ativo */
 .navbar a:hover {
-  color: var(--navbar-link-hover);
+  color: var(--cor-link-hover);
+  transform: translateY(-2px);
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
 }
 
 .navbar a:active {
-  color: #ffd700;
+  color: var(--cor-link-active);
+  transform: translateY(0);
 }
