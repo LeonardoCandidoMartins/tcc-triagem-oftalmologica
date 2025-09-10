@@ -1,0 +1,129 @@
+[
+  {
+    "nome": "Medicamentos Oculares",
+    "foto": "lorem",
+    "descricao": "Uso de pomadas e colírios para tratar infecções, inflamações ou condições específicas dos olhos.",
+    "itensNecessarios": [
+      "Receita médica atualizada",
+      "Colírios ou pomadas prescritos",
+      "Algodão ou gaze limpa",
+      "Álcool em gel para higiene das mãos"
+    ],
+    "preOperatorio": [
+      "Ler atentamente a prescrição médica",
+      "Verificar validade dos medicamentos",
+      "Higienizar bem as mãos antes da aplicação"
+    ],
+    "posOperatorio": [
+      "Seguir corretamente a frequência de aplicação",
+      "Armazenar o medicamento em local adequado (geralmente fresco e protegido da luz)",
+      "Observar sinais de alergia ou irritação e informar ao médico"
+    ],
+    "consideracoes": [
+      "Nunca compartilhar colírios ou pomadas com outras pessoas",
+      "Não interromper o tratamento por conta própria",
+      "Consultar o médico em caso de efeitos adversos"
+    ]
+  },
+  {
+    "nome": "Tampão Ocular",
+    "foto": "https://http2.mlstatic.com/D_702999-MLB53193442352_012023-O.jpg",
+    "descricao": "Utilização de um tampão para proteger o olho ou estimular a visão do outro olho em casos de estrabismo ou ambliopia.",
+    "itensNecessarios": [
+      "Tampão ocular descartável ou reutilizável",
+      "Fita adesiva hipoalergênica (se necessário)",
+      "Álcool em gel para higienização das mãos"
+    ],
+    "preOperatorio": [
+      "Orientação médica sobre tempo de uso diário",
+      "Verificar material limpo e em bom estado",
+      "Higienizar a área ao redor dos olhos"
+    ],
+    "posOperatorio": [
+      "Seguir rigorosamente o tempo recomendado",
+      "Trocar o tampão em caso de sujeira ou umidade",
+      "Observar possíveis irritações na pele"
+    ],
+    "consideracoes": [
+      "Pode causar desconforto inicial, mas tende a melhorar com o tempo",
+      "Importante acompanhar evolução com consultas periódicas",
+      "Estimular atividades que reforcem o uso do olho descoberto"
+    ]
+  },
+  {
+    "nome": "Como Aplicar Colírio",
+    "foto": "lorem",
+    "descricao": "Procedimento de instilar gotas nos olhos para tratamento ou hidratação ocular.",
+    "itensNecessarios": [
+      "Colírio prescrito",
+      "Espelho (opcional, para auxílio)",
+      "Lenço de papel limpo"
+    ],
+    "preOperatorio": [
+      "Higienizar as mãos",
+      "Verificar validade e condições do frasco",
+      "Agitar o colírio se recomendado na bula"
+    ],
+    "posOperatorio": [
+      "Fechar os olhos suavemente após aplicação",
+      "Pressionar levemente o canto do olho (canal lacrimal) por alguns segundos para maior absorção",
+      "Evitar piscar excessivamente"
+    ],
+    "consideracoes": [
+      "Não encostar o frasco nos olhos ou cílios",
+      "Respeitar o intervalo entre diferentes colírios",
+      "Não compartilhar colírios com outras pessoas"
+    ]
+  },
+  {
+    "nome": "Cirurgia de Catarata (exemplo)",
+    "foto": "lorem",
+    "descricao": "Procedimento cirúrgico para substituir o cristalino opaco por uma lente intraocular.",
+    "itensNecessarios": [
+      "Exames pré-operatórios",
+      "Lente intraocular",
+      "Anestesia local",
+      "Equipe médica especializada"
+    ],
+    "preOperatorio": [
+      "Realizar exames laboratoriais e oftalmológicos",
+      "Suspender medicamentos específicos se indicado",
+      "Jejum conforme orientação médica"
+    ],
+    "posOperatorio": [
+      "Usar colírios antibióticos e anti-inflamatórios conforme prescrição",
+      "Evitar esforços físicos nos primeiros dias",
+      "Utilizar óculos escuros para proteção"
+    ],
+    "consideracoes": [
+      "A visão pode demorar alguns dias para estabilizar",
+      "Consultar imediatamente o médico em caso de dor intensa ou perda súbita de visão",
+      "Agendar revisões periódicas"
+    ]
+  },
+  {
+    "nome": "Higiene Palpebral",
+    "foto": "lorem",
+    "descricao": "Limpeza das pálpebras para tratamento de blefarite ou prevenção de inflamações.",
+    "itensNecessarios": [
+      "Gaze ou cotonete",
+      "Solução de limpeza indicada (água boricada ou shampoo infantil diluído)",
+      "Água morna"
+    ],
+    "preOperatorio": [
+      "Lavar bem as mãos",
+      "Preparar a solução de limpeza",
+      "Garantir ambiente limpo"
+    ],
+    "posOperatorio": [
+      "Repetir o procedimento diariamente",
+      "Evitar coçar os olhos após a limpeza",
+      "Manter acompanhamento médico em casos crônicos"
+    ],
+    "consideracoes": [
+      "A higiene deve ser suave para não irritar os olhos",
+      "Pode ser necessária associação com medicamentos tópicos",
+      "Fundamental para pacientes com blefarite recorrente"
+    ]
+  }
+]
