@@ -1,27 +1,26 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams, Link } from "react-router-dom";
-import styles from "./DetalheCondicao.module.css";
+import styles from "./DetalheTratamento.module.css";
 import styleNavBar from "../../components/navbar/Navbar.module.css";
 
-function DetalheCondicao() {
+function DetalheTratamento() {
   const { state } = useLocation();
-  const { nomeCondicao } = useParams();
+  const { nomeTratamento } = useParams();
   const navigate = useNavigate();
 
   const [item, setItem] = useState(state || null);
   const [erro, setErro] = useState("");
 
   useEffect(() => {
-    if (state) return; // já temos o item via navigate
+    if (state) return;
 
-    const nomeDecodificado = decodeURIComponent(nomeCondicao || "");
-    fetch("/data/olhosVermelhos.json")
+    const nomeDecodificado = decodeURIComponent(nomeTratamento || "");
+    fetch("/data/tratamentosOculares.json")
       .then((res) => res.json())
       .then((data) => {
-        const lista = data.olhosVermelhos || [];
-        const encontrado = lista.find((c) => c.nome === nomeDecodificado);
+        const encontrado = data.find((t) => t.nome === nomeDecodificado);
         if (!encontrado) {
-          setErro("Condição não encontrada.");
+          setErro("Tratamento não encontrado.");
           return;
         }
         setItem(encontrado);
@@ -30,7 +29,7 @@ function DetalheCondicao() {
         console.error(err);
         setErro("Erro ao carregar os dados.");
       });
-  }, [state, nomeCondicao]);
+  }, [state, nomeTratamento]);
 
   if (erro) {
     return (
@@ -49,8 +48,10 @@ function DetalheCondicao() {
     nome,
     foto,
     descricao,
-    tratamentos = [],
-    referencias = [],
+    itensNecessarios = [],
+    preOperatorio = [],
+    posOperatorio = [],
+    consideracoes = [],
   } = item;
 
   return (
@@ -78,17 +79,31 @@ function DetalheCondicao() {
 
         <p className={styles.descricao}>{descricao}</p>
 
-        <h2 className={styles.subtitulo}>Tratamentos</h2>
+        <h2 className={styles.subtitulo}>Itens Necessários</h2>
         <ul className={styles.lista}>
-          {tratamentos.map((t, i) => (
+          {itensNecessarios.map((t, i) => (
             <li key={i}>{t}</li>
           ))}
         </ul>
 
-        <h2 className={styles.subtitulo}>Referências</h2>
+        <h2 className={styles.subtitulo}>Pré-Operatório</h2>
         <ul className={styles.lista}>
-          {referencias.map((ref, i) => (
-            <li key={i}>{ref}</li>
+          {preOperatorio.map((t, i) => (
+            <li key={i}>{t}</li>
+          ))}
+        </ul>
+
+        <h2 className={styles.subtitulo}>Pós-Operatório</h2>
+        <ul className={styles.lista}>
+          {posOperatorio.map((t, i) => (
+            <li key={i}>{t}</li>
+          ))}
+        </ul>
+
+        <h2 className={styles.subtitulo}>Considerações</h2>
+        <ul className={styles.lista}>
+          {consideracoes.map((t, i) => (
+            <li key={i}>{t}</li>
           ))}
         </ul>
       </div>
@@ -96,4 +111,4 @@ function DetalheCondicao() {
   );
 }
 
-export default DetalheCondicao;
+export default DetalheTratamento;

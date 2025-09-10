@@ -10,7 +10,7 @@
 .navbar {
   position: sticky;
   top: 0;
-  width: 100vw; /* Garante que não ultrapasse a tela */
+  width: 100%; /* Use 100% em vez de 100vw */
   z-index: 1000;
 
   /* Efeito Glassmorphism */
@@ -23,11 +23,13 @@
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  padding: 0 2rem; /* Menos propenso a causar overflow */
+  padding: 0 1rem; /* padding reduzido para evitar overflow */
   box-sizing: border-box; /* Inclui padding na largura total */
 
   /* Sombra suave */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  overflow-x: hidden; /* garante que nada cause scroll horizontal */
 }
 
 /* Links da navbar */
