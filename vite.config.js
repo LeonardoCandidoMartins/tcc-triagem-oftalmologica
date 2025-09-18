@@ -7,11 +7,11 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg'], // pode trocar por seus ícones
+      includeAssets: ['favicon.svg'],
       manifest: {
         name: 'OftalmoApp Auxilio Triagem',
         short_name: 'OftalmoApp',
-        description: 'Projeto de TCC de Leonardo Candido Martins, aplicacao para axilio em triagens oftalmologicas',
+        description: 'Projeto de TCC de Leonardo Candido Martins, aplicacao para auxilio em triagens oftalmologicas',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
@@ -36,6 +36,7 @@ export default defineConfig({
         ],
       },
       workbox: {
+        globPatterns: ['data/*.json'],
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.pathname.startsWith('/data/'),
@@ -44,7 +45,7 @@ export default defineConfig({
               cacheName: 'json-cache',
               expiration: {
                 maxEntries: 20,
-                maxAgeSeconds: 60 * 60 * 24 * 7, // 7 dias
+                maxAgeSeconds: 60 * 60 * 24 * 30,
               },
             },
           },
