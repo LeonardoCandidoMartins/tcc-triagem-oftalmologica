@@ -19,3 +19,10 @@ usar F2 para renomear todas as variaveis (somente nome de variaveis)
 
 
 yarn add @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
+
+
+vamos transformar em PWA, segue o comando 
+
+yarn add vite-plugin-pwa --dev
+
+
