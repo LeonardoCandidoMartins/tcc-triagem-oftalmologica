@@ -38,8 +38,8 @@ function TraumaOcular() {
               onClick={() => handleClick(item)}
             >
               <div className={listaStyles.listaImagem}>
-  {item.foto && <img src={item.foto} alt={item.nome} className={listaStyles.imagemReal} />}
-</div>
+                {item.foto && <img src={item.foto} alt={item.nome} className={listaStyles.imagemReal} />}
+              </div>
               <span className={listaStyles.listaTexto}>{item.nome}</span>
             </li>
           ))}

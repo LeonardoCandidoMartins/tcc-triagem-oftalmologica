@@ -1,0 +1,7 @@
+usei fetch para ler o json e tratatos os erros de leitura caso aparecer
+
+usei useEffect para n ficar chamando toda a vez o fetch, apenas na primeira leitura
+
+codigo deiferente a baixo, eu crio um vertor e uma função para alterar o que tem dentro e uso useState (que retorna um objeto e uma função para alterar esse objeto)e usamos [] para criar ela vazia
+const [estabelecimentos, setEstabelecimentos] = useState([]);
+
