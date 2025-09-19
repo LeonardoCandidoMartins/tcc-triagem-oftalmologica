@@ -2,85 +2,65 @@ import { useEffect, useState } from 'react';
 import styles from './Estabelecimentos.module.css';
 import styleNavBar from "../../components/navbar/Navbar.module.css";
 import { Link } from 'react-router-dom';
+import listaStyles from "../../components/lista/Lista.module.css";
 
 function Estabelecimentos() {
-  const [medicos, setMedicos] = useState([]);
-  const [search, setSearch] = useState('');
-  const [expandedCard, setExpandedCard] = useState(null);
 
-  useEffect(() => {
-    fetch('/data/medicos.json')
-      .then(res => res.json())
-      .then(data => setMedicos(data))
-      .catch(err => console.error('Erro ao carregar JSON:', err));
-  }, []);
+    const [estabelecimentos, setEstabelecimentos] = useState([]);
 
-  const handleExpand = (index) => {
-    setExpandedCard(expandedCard === index ? null : index);
-  }
+    useEffect(() => {
+        fetch('/data/estabelecimentos.json')
+            .then((resposta) => {
+                if (!resposta.ok) {
+                    throw new Error('Erro ao carregar o JSON: ' + resposta.status);
+                }
+                return resposta.json();
+            })
+            .then((data) => {
+                setEstabelecimentos(data);
+            })
+            .catch((error) => {
+                console.error('Erro:', error);
+            });
+    }, []);
 
-  const filteredMedicos = medicos.filter(m =>
-    m.nome.toLowerCase().includes(search.toLowerCase()) ||
-    m.endereco.toLowerCase().includes(search.toLowerCase())
-  );
+    return (
+        <>
+            <nav className={styleNavBar.navbar}>
+                <Link to="/">Início</Link>
+                <Link to="/sobre">Sobre</Link>
+                <Link to="/configuracoes">Configurações</Link>
+            </nav>
 
-  return (
-    <>
-      <nav className={styleNavBar.navbar}>
-        <Link to="/">Início</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/configuracoes">Configurações</Link>
-      </nav>
+            <div className={listaStyles.listaContainer}>
+                <h1 className={listaStyles.listaTitle}>Estabelecimentos de Oftalmologia</h1>
+                <ul className={listaStyles.listaLista}>
 
-      <div className={styles.container}>
-        <h1 className={styles.titulo}>Estabelecimentos de Oftalmologia</h1>
+                    {estabelecimentos.map((item, index) => (
+                        <li className={listaStyles.listaItem} key={index}>
+                            <details className={listaStyles.details}>
+                                
+                                <summary className={listaStyles.listaResumo}>
+                                    <div className={listaStyles.listaImagem}>
+                                        {item.foto && ( <img src={item.foto} alt={item.nome} className={listaStyles.imagemReal} /> )}
+                                    </div>
+                                    <span className={listaStyles.listaTexto}>{item.nome}</span>
+                                </summary>
 
-        <div className={styles.searchBar}>
-          <input
-            type="text"
-            placeholder="Buscar por nome ou cidade..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
+                                <div className={listaStyles.listaInfo}>
+                                    <p><strong>Contato:</strong> {item.contato}</p>
+                                    <p><strong>Endereço:</strong> {item.endereco}</p>
+                                    <p><strong>Site:</strong> {item.site ? <a href={item.site} target="_blank" rel="noopener noreferrer">{item.site}</a> : 'Não informado'}</p>
+                                    <p><strong>Google Maps:</strong> {item.linkGoogleMaps ? <a href={item.linkGoogleMaps} target="_blank" rel="noopener noreferrer">Abrir no Maps</a> : 'Não disponível'}</p>
+                                </div>
+                            </details>
+                        </li>
+                    ))}
 
-        <div className={styles.grid}>
-          {filteredMedicos.map((medico, index) => (
-            <div
-              key={index}
-              className={`${styles.card} ${expandedCard === index ? styles.expanded : ''}`}
-              onClick={() => handleExpand(index)}
-            >
-              <h2>{medico.nome}</h2>
-              <p><strong>Contato:</strong> {medico.contato}</p>
-              <p><strong>Endereço:</strong> {medico.endereco}</p>
-
-              {expandedCard === index && (
-                <>
-                  <p>
-                    <strong>Site:</strong>{' '}
-                    <a href={medico.site} target="_blank" rel="noopener noreferrer">
-                      {medico.site}
-                    </a>
-                  </p>
-                  <p>
-                    <strong>Mapa:</strong>{' '}
-                    <a href={medico.linkgooglemaps} target="_blank" rel="noopener noreferrer">
-                      Abrir no Google Maps
-                    </a>
-                  </p>
-                  <div
-                    className={styles.mapa}
-                    dangerouslySetInnerHTML={{ __html: medico.iframe }}
-                  />
-                </>
-              )}
+                </ul>
             </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
+        </>
+    );
 }
 
 export default Estabelecimentos;
