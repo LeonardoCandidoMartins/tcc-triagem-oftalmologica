@@ -1,7 +1,15 @@
 import { useState } from 'react';
 import styles from './LuzCobalto.module.css';
 import styleNavBar from "../../components/navbar/Navbar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import BackButton from "../../components/BackButton";
 import { Link } from 'react-router-dom';
+import {
+  faHouse,
+  faCircleInfo,
+  faGear,
+  faBookBookmark
+} from "@fortawesome/free-solid-svg-icons";
 
 function AzulCobalto() {
   const [brilho, setBrilho] = useState(100); // valor de 0 a 100
@@ -11,15 +19,28 @@ function AzulCobalto() {
   }
 
   return (
-    <>
+    <div className={styles.page}>
       <nav className={styleNavBar.navbar}>
-        <Link to="/">Início</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/configuracoes">Configurações</Link>
+        <Link to="/" aria-label="Início" title="Início">
+          <FontAwesomeIcon icon={faHouse} />
+        </Link>
+        <Link to="/sobre" aria-label="Sobre" title="Sobre">
+          <FontAwesomeIcon icon={faCircleInfo} />
+        </Link>
+        <Link to="/referencias" aria-label="Referências" title="Referências">
+          <FontAwesomeIcon icon={faBookBookmark} />
+        </Link>
+        <Link to="/configuracoes" aria-label="Configurações" title="Configurações">
+          <FontAwesomeIcon icon={faGear} />
+        </Link>
       </nav>
 
-      <div 
-        className={styles.container} 
+      <div style={{ filter: `brightness(${brilho}%)` }} className={styles.backgroudDiv}>
+        <BackButton />
+      </div>
+
+      <div
+        className={styles.container}
         style={{ filter: `brightness(${brilho}%)` }}
       >
         <h1 className={styles.titulo}>Tela Azul Cobalto</h1>
@@ -41,7 +62,7 @@ function AzulCobalto() {
           <span>{brilho}%</span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

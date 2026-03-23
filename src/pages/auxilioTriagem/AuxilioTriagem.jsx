@@ -1,7 +1,14 @@
 import { useState } from 'react';
 import styles from './AuxilioTriagem.module.css'; // Importa os estilos CSS Modules
+import BackButton from '../../components/BackButton';
 import styleNavBar from "../../components/navbar/Navbar.module.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faCircleInfo,
+  faGear
+} from "@fortawesome/free-solid-svg-icons";
 
 const fluxo = {
   inicio: {
@@ -111,9 +118,11 @@ const fluxo = {
 };
 
 export default function FluxogramaTriagem() {
+  const navigate = useNavigate();
   const [etapaAtual, setEtapaAtual] = useState('inicio');
   const [history, setHistory] = useState([]);
   const [respostas, setRespostas] = useState([]);
+  const [aceiteAviso, setAceiteAviso] = useState(false);
 
   const etapa = fluxo[etapaAtual];
 
@@ -147,68 +156,99 @@ export default function FluxogramaTriagem() {
 
   return (
     <>
-    <nav className={styleNavBar.navbar}>
-      <Link to="/">Início</Link>
-      <Link to="/sobre">Sobre</Link>
-      <Link to="/configuracoes">Configurações</Link>
-    </nav>
-    
-    <div className={styles.container}>
-      <div className={styles.card}>
-        {etapa.pergunta && (
-          <>
-            <h2>{etapa.pergunta}</h2>
-            <div className={styles.optionsContainer}>
-              {Object.keys(etapa.opcoes).map((resp) => (
-                <button key={resp} onClick={() => handleResposta(resp)}>
-                  {resp}
-                </button>
-              ))}
-            </div>
-            {history.length > 0 && (
-              // Usando a nova classe para o botão de voltar
-              <button onClick={handleVoltar} className={styles.voltarButton}>
-                ← Voltar
+      <nav className={styleNavBar.navbar}>
+        <Link to="/" aria-label="Início" title="Início">
+          <FontAwesomeIcon icon={faHouse} />
+        </Link>
+        <Link to="/sobre" aria-label="Sobre" title="Sobre">
+          <FontAwesomeIcon icon={faCircleInfo} />
+        </Link>
+        <Link to="/configuracoes" aria-label="Configurações" title="Configurações">
+          <FontAwesomeIcon icon={faGear} />
+        </Link>
+      </nav>
+
+      <BackButton />
+      {!aceiteAviso && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modal}>
+            <h2>Aviso Importante</h2>
+            <p>
+              Esta ferramenta de apoio não substitui avaliação, julgamento ou
+              análise clínica profissional.
+              <br />
+              Ao clicar em OK, você confirma que
+              entendeu as condições de uso e que a decisão final depende de
+              avaliação clínica adequada.
+            </p>
+            <div className={styles.modalActions}>
+              <button
+                onClick={() => navigate('/')}
+                className={styles.sairButton}
+              >
+                Sair
               </button>
-            )}
-          </>
-        )}
+              <button onClick={() => setAceiteAviso(true)}>OK</button>
+            </div>
+          </div>
+        </div>
+      )}
+      <div className={styles.container}>
+        <div className={styles.card}>
+          {etapa.pergunta && (
+            <>
+              <h2>{etapa.pergunta}</h2>
+              <div className={styles.optionsContainer}>
+                {Object.keys(etapa.opcoes).map((resp) => (
+                  <button key={resp} onClick={() => handleResposta(resp)}>
+                    {resp}
+                  </button>
+                ))}
+              </div>
+              {history.length > 0 && (
+                // Usando a nova classe para o botão de voltar
+                <button onClick={handleVoltar} className={styles.voltarButton}>
+                  ← Voltar
+                </button>
+              )}
+            </>
+          )}
 
-        {etapa.acao && (
-          <>
-            <h3>Ações:</h3>
-            <ul>
-              {etapa.acao.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-            {/* Usando a nova classe para o botão de reiniciar */}
-            <button onClick={reiniciar} className={styles.reiniciarButton}>
-              Reiniciar
-            </button>
-          </>
-        )}
+          {etapa.acao && (
+            <>
+              <h3>Ações:</h3>
+              <ul>
+                {etapa.acao.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+              {/* Usando a nova classe para o botão de reiniciar */}
+              <button onClick={reiniciar} className={styles.reiniciarButton}>
+                Reiniciar
+              </button>
+            </>
+          )}
 
-        {etapa.resultado && (
-          <>
-            {/* Usando a nova classe para o texto do diagnóstico */}
-            <h2 className={styles.diagnostico}>Diagnóstico: {etapa.resultado}</h2>
-            <h3>Respostas anteriores:</h3>
-            <ul>
-              {respostas.map((r, i) => (
-                <li key={i}>
-                  <strong>{r.pergunta}</strong>: {r.resposta}
-                </li>
-              ))}
-            </ul>
-            {/* Usando a nova classe para o botão de reiniciar */}
-            <button onClick={reiniciar} className={styles.reiniciarButton}>
-              Reiniciar
-            </button>
-          </>
-        )}
+          {etapa.resultado && (
+            <>
+              {/* Usando a nova classe para o texto do diagnóstico */}
+              <h2 className={styles.diagnostico}>Diagnóstico: {etapa.resultado}</h2>
+              <h3>Respostas anteriores:</h3>
+              <ul>
+                {respostas.map((r, i) => (
+                  <li key={i}>
+                    <strong>{r.pergunta}</strong>: {r.resposta}
+                  </li>
+                ))}
+              </ul>
+              {/* Usando a nova classe para o botão de reiniciar */}
+              <button onClick={reiniciar} className={styles.reiniciarButton}>
+                Reiniciar
+              </button>
+            </>
+          )}
+        </div>
       </div>
-    </div>
     </>
   );
 }

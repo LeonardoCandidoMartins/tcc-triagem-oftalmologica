@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import listaStyles from "../../components/lista/Lista.module.css";
+import BackButton from "../../components/BackButton";
 import styleNavBar from "../../components/navbar/Navbar.module.css";
 
 function TratamentoOcular() {
@@ -29,6 +30,7 @@ function TratamentoOcular() {
       </nav>
 
       <div className={listaStyles.listaContainer}>
+        <BackButton />
         <h1 className={listaStyles.listaTitle}>Tratamento Ocular</h1>
         <ul className={listaStyles.listaLista}>
           {tratamentos.map((item, index) => (

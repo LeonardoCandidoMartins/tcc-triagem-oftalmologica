@@ -1,10 +1,10 @@
 .container {
-  height: calc(100vh - 60px); /* considerando navbar */
+  min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0047AB; /* Azul cobalto */
+  background-color: #0047AB;
   color: white;
   text-align: center;
   padding: 2rem;
@@ -16,7 +16,7 @@
 }
 
 .aviso {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 1rem 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -31,4 +31,10 @@
 
 .barraBrilho input[type="range"] {
   width: 200px;
+}
+
+.backgroudDiv {
+  background-color: #0047AB;
+  border: 1px solid #0047AB;
+  border-color: #0047AB;
 }

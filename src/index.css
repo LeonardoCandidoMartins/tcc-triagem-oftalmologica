@@ -3,9 +3,15 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --background-primary: #f6f8fb;
+  --color-primary: #10243e;
+  --accent-color: #2369af;
+  --card-background: #ffffff;
+  --text-muted: #4b5b70;
+  --fundo-claro: var(--background-primary);
+  --texto-principal: var(--color-primary);
+  --link-color: #2369af;
+  --link-hover: #184c80;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,21 +19,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  /* display: flex;
-  place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+}
+
+body.app-dark-mode {
+  --background-primary: #0f1724;
+  --color-primary: #e3ecf9;
+  --accent-color: #89b9ff;
+  --card-background: #1a2435;
+  --text-muted: #c2d3ea;
+  --fundo-claro: #0f1724;
+  --texto-principal: #e3ecf9;
+  --link-color: #9fc5ff;
+  --link-hover: #c6ddff;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--link-hover);
 }
 
 h1 {
@@ -42,27 +65,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Censura global de imagens clínicas */
+body.app-censor-images img {
+  filter: blur(20px) saturate(0.7);
 }

@@ -5,6 +5,55 @@
   height: 80vh;
 }
 
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 18, 30, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1100;
+}
+
+.modal {
+  width: 100%;
+  max-width: 460px;
+  background-color: #ffffff;
+  color: #1b2636;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.25);
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.modal p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.modalActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.modalActions button {
+  flex: 1;
+}
+
+.sairButton {
+  background-color: #6c757d !important;
+}
+
+.sairButton:hover {
+  background-color: #5a6268 !important;
+}
+
 .card {
   background-color: #fff;
   border-radius: 10px;

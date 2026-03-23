@@ -1,8 +1,15 @@
 import { useEffect, useState } from 'react';
-import styles from './Estabelecimentos.module.css';
 import styleNavBar from "../../components/navbar/Navbar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom';
 import listaStyles from "../../components/lista/Lista.module.css";
+import BackButton from "../../components/BackButton";
+import {
+    faHouse,
+    faCircleInfo,
+    faGear,
+    faBookBookmark
+} from "@fortawesome/free-solid-svg-icons";
 
 function Estabelecimentos() {
 
@@ -27,10 +34,20 @@ function Estabelecimentos() {
     return (
         <>
             <nav className={styleNavBar.navbar}>
-                <Link to="/">Início</Link>
-                <Link to="/sobre">Sobre</Link>
-                <Link to="/configuracoes">Configurações</Link>
+                <Link to="/" aria-label="Início" title="Início">
+                    <FontAwesomeIcon icon={faHouse} />
+                </Link>
+                <Link to="/sobre" aria-label="Sobre" title="Sobre">
+                    <FontAwesomeIcon icon={faCircleInfo} />
+                </Link>
+                <Link to="/referencias" aria-label="Referências" title="Referências">
+                    <FontAwesomeIcon icon={faBookBookmark} />
+                </Link>
+                <Link to="/configuracoes" aria-label="Configurações" title="Configurações">
+                    <FontAwesomeIcon icon={faGear} />
+                </Link>
             </nav>
+            <BackButton />
 
             <div className={listaStyles.listaContainer}>
                 <h1 className={listaStyles.listaTitle}>Estabelecimentos de Oftalmologia</h1>
@@ -39,10 +56,10 @@ function Estabelecimentos() {
                     {estabelecimentos.map((item, index) => (
                         <li className={listaStyles.listaItem} key={index}>
                             <details className={listaStyles.details}>
-                                
+
                                 <summary className={listaStyles.listaResumo}>
                                     <div className={listaStyles.listaImagem}>
-                                        {item.foto && ( <img src={item.foto} alt={item.nome} className={listaStyles.imagemReal} /> )}
+                                        {item.foto && (<img src={item.foto} alt={item.nome} className={listaStyles.imagemReal} />)}
                                     </div>
                                     <span className={listaStyles.listaTexto}>{item.nome}</span>
                                 </summary>

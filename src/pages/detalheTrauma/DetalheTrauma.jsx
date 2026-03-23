@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams, Link } from "react-router-dom";
 import styles from "./DetalheTrauma.module.css";
+import BackButton from "../../components/BackButton";
 import styleNavBar from "../../components/navbar/Navbar.module.css";
+import {
+  faHouse,
+  faCircleInfo,
+  faGear,
+  faBookBookmark
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function DetalheTrauma() {
   const { state } = useLocation();
@@ -56,15 +64,22 @@ function DetalheTrauma() {
   return (
     <>
       <nav className={styleNavBar.navbar}>
-        <Link to="/">Início</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/configuracoes">Configurações</Link>
+        <Link to="/" aria-label="Início" title="Início">
+          <FontAwesomeIcon icon={faHouse} />
+        </Link>
+        <Link to="/sobre" aria-label="Sobre" title="Sobre">
+          <FontAwesomeIcon icon={faCircleInfo} />
+        </Link>
+        <Link to="/referencias" aria-label="Referências" title="Referências">
+          <FontAwesomeIcon icon={faBookBookmark} />
+        </Link>
+        <Link to="/configuracoes" aria-label="Configurações" title="Configurações">
+          <FontAwesomeIcon icon={faGear} />
+        </Link>
       </nav>
 
       <div className={styles.container}>
-        {/* <button className={styles.voltar} onClick={() => navigate(-1)}>
-          ← Voltar
-        </button> */}
+        <BackButton />
 
         <h1 className={styles.titulo}>{titulo}</h1>
 
