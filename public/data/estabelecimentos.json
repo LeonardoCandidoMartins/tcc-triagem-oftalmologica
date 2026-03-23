@@ -1,146 +1,26 @@
 [
   {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
+    "nome": "Hospital da Visão de Maringá",
+    "foto": "/hospitaldavisao.png",
+    "contato": "(44) 3032-3600",
+    "endereco": "Av. Rio Branco, 723 - Zona 05, Maringá - PR, 87015-380",
+    "site": "https://hospitaldavisaodoparana.med.br/",
+    "linkGoogleMaps": "https://www.google.com/maps/dir//Hospital+da+Vis%C3%A3o+do+Paran%C3%A1+-+Oftalmologia:+Consultas,+Exames+e+Cirurgias+em+Maring%C3%A1%2FPR,+Av.+Rio+Branco,+723+-+Zona+05,+Maring%C3%A1+-+PR,+87015-380/@-23.4125658,-51.9471104,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ecd7223f761add:0x40f062ec2c679b50!2m2!1d-51.9556727!2d-23.4278377?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
+    "nome": "Hospital Universitário Regional de Maringá",
+    "foto": "/hum.png",
+    "contato": "(44) 3011-9100",
+    "endereco": "Av. Mandacaru, 1590 - Parque das Laranjeiras, Maringá - PR, 87083-240",
+    "site": "https://www.hum.uem.br/",
+    "linkGoogleMaps": "https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=KWPyGpG_1uyUMZWbJMCiJI9R&daddr=Av.+Mandacaru,+1590+-+Parque+das+Laranjeiras,+Maring%C3%A1+-+PR,+87083-240"
   },
   {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
-  },
-  {
-    "nome": "Nome censurado",
-    "foto": "Imagem censurada",
-    "contato": "(00) 0000-0000",
-    "endereco": "Endereço censurado",
-    "site": "Link censurado",
-    "linkGoogleMaps": "Link censurado",
-    "iframe": "<iframe src='iframe censurado'></iframe>"
+    "nome": "Hospital Bom Samaritano de Maringá",
+    "foto": "/hospital_bom.jpeg",
+    "contato": "(44) 3032-1818",
+    "endereco": "Av. Independência, 93 Zona 04 - Maringá (PR) CEP: 87015-020",
+    "site": "https://www.hospitalbomsamaritano.com.br/",
+    "linkGoogleMaps": "https://www.google.com/maps/dir//Hospital+Bom+Samaritano+de+Maring%C3%A1+-+Av.+Independ%C3%AAncia,+93+-+Zona+04,+Maring%C3%A1+-+PR,+87015-020/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94ecd7812932f8a9:0xca0ac0e0a037cfc2?sa=X&ved=1t:57443&ictx=111"
   }
 ]
