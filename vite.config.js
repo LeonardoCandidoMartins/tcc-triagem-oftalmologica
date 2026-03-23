@@ -9,31 +9,25 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'], // pode trocar por seus ícones
       manifest: {
-        name: 'OftalmoApp Auxilio Triagem',
-        short_name: 'OftalmoApp',
-        description: 'Projeto de TCC de Leonardo Candido Martins, aplicacao para axilio em triagens oftalmologicas',
-        theme_color: '#ffffff',
-        background_color: '#ffffff',
-        display: 'standalone',
-        start_url: '/',
+        name: "OftalmoApp",
+        short_name: "Oftalmo",
+        description: "Aplicativo de apoio à triagem oftalmológica",
+        theme_color: "#0a4da3",
+        background_color: "#ffffff",
+        display: "standalone",
+        start_url: "/",
         icons: [
           {
-            src: 'pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
+            src: "/icone.jpg",
+            sizes: "192x192",
+            type: "image/jpeg"
           },
           {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
-          },
-        ],
+            src: "/icone.jpg",
+            sizes: "512x512",
+            type: "image/jpeg"
+          }
+        ]
       },
       workbox: {
         runtimeCaching: [

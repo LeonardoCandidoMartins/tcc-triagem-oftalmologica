@@ -14,6 +14,7 @@ import TratamentoOcular from "../src/pages/tratamentoOcular/TratamentoOcular.jsx
 import DetalheTratamento from "../src/pages/detalheTratamento/DetalheTratamento.jsx";
 import LuzCobalto from "../src/pages/luzCobalto/LuzCobalto.jsx";
 import Estabelecimentos from "../src/pages/estabelecimentos/Estabelecimentos.jsx";
+import Referencias from "../src/pages/referencias/Referencias.jsx";
 
 const AppRoutes = () => {
   return (
@@ -28,6 +29,7 @@ const AppRoutes = () => {
       <Route path="/tratamento-ocular" element={<TratamentoOcular />} />
       <Route path="/luz-cobalto" element={<LuzCobalto />} />
       <Route path="/estabelecimentos" element={<Estabelecimentos />} />
+      <Route path="/referencias" element={<Referencias />} />
 
       {/* rotas dinâmicas */}
       <Route path="/trauma/:nome" element={<DetalheTrauma />} />
